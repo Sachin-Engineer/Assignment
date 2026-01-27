@@ -1,0 +1,39 @@
+/* Local styles for HeroSection / Swiper instance */
+
+.mySwiper {
+  width: 100%;
+}
+
+/* Pagination: turn default dots into a single horizontal bar indicator */
+.mySwiper .swiper-pagination {
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px; /* overall indicator width */
+  height: 4px;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Each "bullet" becomes a segment of the bar */
+.mySwiper .swiper-pagination-bullet {
+  flex: 1;
+  height: 4px;
+  margin: 0 !important;
+  border-radius: 999px;
+  background: rgba(16, 24, 40, 0.14); /* light track */
+  opacity: 1;
+}
+
+/* Active slide segment */
+.mySwiper .swiper-pagination-bullet-active {
+  background: #1d4ed8; /* blue fill */
+}
+
+/* Tweak arrow size a bit (optional) */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: #fff;
+}

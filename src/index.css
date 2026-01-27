@@ -1,1 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans:regular,500,600,700,italic,500italic,600italic,700italic);
 @import "tailwindcss";
+
+.font-googleSans {
+  font-family: "Google Sans", sans-serif;
+}
+
+.Hero-Section {
+  background: linear-gradient(to top right, #ffffff 0%, #eaeaf9 100%);
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRightOutside {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeftOutside {
+  from {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottomOutside {
+  from {
+    transform: translateY(140%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
