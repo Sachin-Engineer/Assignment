@@ -5,6 +5,7 @@ import ClientsSection from "./components/ClientsSection"
 import ServicesSection from "./components/ServicesSection"
 import ClientStoriesSection from "./components/ClientStoriesSection"
 import ThodaAurSection from "./components/ThodaAurSection"
+import BlogsSection from "./components/BlogsSection"
 
 function App() {
 
@@ -36,6 +37,10 @@ function App() {
 
       <section>
         <ClientStoriesSection />
+      </section>
+
+      <section className="pl-5 pr-5 pt-3 pb-3">
+        <BlogsSection />
       </section>
     </>
   )
