@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection"
 import ExpertsSection from "./components/ExpertsSection"
 import ClientsSection from "./components/ClientsSection"
 import ServicesSection from "./components/ServicesSection"
+import ThodaAurSection from "./components/ThodaAurSection"
 
 function App() {
 
@@ -27,8 +28,10 @@ function App() {
       <section className="pl-5 pr-5 pt-3 pb-3">
         <ServicesSection />
       </section>
+
+      <section>
+        <ThodaAurSection />
+      </section>
     </>
   )
-}
-
-export default App
+}export default App
