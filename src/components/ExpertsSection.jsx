@@ -48,8 +48,8 @@ const ExpertsSection = () => {
   };
 
   return (
-    <div className="w-[95%] mx-auto bg-linear-to-br from-purple-50 to-blue-50 rounded-3xl p-12 md:p-16 lg:p-20 mt-20 mb-20">
-      <div className="flex justify-between gap-12 items-center">
+    <div className="w-[95%] mx-auto bg-linear-to-br from-purple-50 to-blue-50 rounded-3xl p-4 md:p-8 lg:p-20 mt-20 mb-20">
+      <div className="expert flex flex-col min-[820px]:flex-row justify-between gap-12 items-center">
         {/* Left Side - Counter Section */}
         <div className="flex flex-col items-start w-fit">
           <div className="mb-8 transition-all duration-500 ease-in-out">
@@ -99,8 +99,8 @@ const ExpertsSection = () => {
         </div>
 
         {/* Right Side - Content Section */}
-        <div className="w-[700px] flex flex-col items-start transition-all duration-500 ease-in-out">
-          <h1 className="text-4xl md:text-[32px] font-normal text-gray-800 mb-6 leading-tight">
+        <div className="w-full p-[5px] min-[400px]:p-[8px] min-[820px]:p-0 min-[820px]:w-[700px] flex flex-col items-start transition-all duration-500 ease-in-out">
+          <h1 className="text-xl min-[400px]:text-2xl min-[600px]:text-3xl min-[820px]:text-[32px] font-normal text-gray-800 mb-4 min-[820px]:mb-6 leading-tight">
             {experts[currentIndex].heading.main}
             <span className="text-blue-600 font-semibold">{experts[currentIndex].heading.highlight}</span>
             {experts[currentIndex].heading.rest}
@@ -108,7 +108,7 @@ const ExpertsSection = () => {
             <span className="text-gray-600">{experts[currentIndex].subheading}</span>
           </h1>
 
-          <p className="text-[#767676] text-[16px] text-wrap:nowrap mb-8 leading-relaxed">
+          <p className="text-[#767676] text-[14px] min-[400px]:text-[15px] min-[820px]:text-[16px] mb-6 min-[820px]:mb-8 leading-relaxed">
             {experts[currentIndex].description}
           </p>
 

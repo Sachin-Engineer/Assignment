@@ -9,9 +9,9 @@ function SecondBanner({ isActive = false }) {
     }, [isActive]);
 
     return (
-        <div className="max-w-7xl mx-auto flex gap-2.5 pt-10 pb-10">
-            <div className="w-full">
-                <p className="text-[36px] font-googleSans pb-5">
+    <div className="max-w-7xl mx-auto flex flex-col min-[1200px]:flex-row gap-2.5 pt-10 pb-10 relative overflow-x-hidden">
+            <div className="max-w-full min-[1200px]:w-1/2 min-[1200px]:min-w-0 z-10 relative">
+                <p className="text-[28px] min-[500px]:text-[32px] min-[1200px]:text-[36px] font-googleSans pb-5">
                     <span className="text-[#1946b6]">FinTech</span>
                     <span className="text-[#26b5e9]">5</span>
                     <span className="text-[#ef4444]">0</span>
@@ -19,12 +19,12 @@ function SecondBanner({ isActive = false }) {
                     <span className="text-[#84cc16]">MG</span>
                 </p>
 
-                <p className="text-[48px] leading-[60px]">
-                    Revolutionizing NBFC <br /> Processes with All-in One <br />{" "}
+                <p className="text-[28px] min-[500px]:text-[36px] min-[1200px]:text-[48px] leading-9 min-[500px]:leading-12 min-[1200px]:leading-15">
+                    Revolutionizing NBFC <br /> Processes with All-in One <br />
                     <span className="text-[#3b62c1]">FinTech Solutions</span>
                 </p>
 
-                <p className="text-[#767676] pt-5 pb-5 max-w-[520px]">
+                <p className="text-[#767676] text-[14px] min-[500px]:text-[16px] pt-5 pb-5 max-w-130">
                     Transforming fintech operations with 5+ years of expertise in technology
                     solutions, user experience, and compliance
                 </p>
@@ -34,8 +34,8 @@ function SecondBanner({ isActive = false }) {
                 </button>
             </div>
 
-            <div className="w-full flex justify-center items-center">
-                <div className="relative w-full max-w-[520px] overflow-hidden">
+            <div className="absolute min-[1200px]:relative inset-0 min-[1200px]:inset-auto w-full min-[1200px]:w-1/2 min-[1200px]:min-w-0 h-full overflow-hidden overflow-x-hidden opacity-20 min-[1200px]:opacity-100 z-0 hidden min-[400px]:flex justify-center items-center">
+                <div className="relative w-full max-w-[520px] overflow-hidden overflow-x-hidden">
 
                     <div className="pointer-events-none absolute -right-2 top-1/2 -translate-y-1/2 w-[420px] h-[300px] rounded-full border border-[#e7eefc]" />
 

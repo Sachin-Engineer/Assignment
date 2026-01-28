@@ -12,56 +12,48 @@ const ServicesSection = () => {
       title: 'UI/UX Design',
       description: 'Intuitive, visually striking designs for effortless digital interactions.',
       image: '/src/assets/images/service1.png',
-      gradient: 'from-purple-500 to-pink-500'
     },
     {
       id: 2,
       title: 'E-Commerce Platforms',
       description: 'Scalable solutions enhancing shopping experiences and driving growth.',
       image: '/src/assets/images/service2.png',
-      gradient: 'from-blue-400 to-blue-600'
     },
     {
       id: 3,
       title: 'Web Development',
       description: 'Tailored websites for performance, scalability, and a strong online presence.',
       image: '/src/assets/images/service3.png',
-      gradient: 'from-yellow-400 to-orange-500'
     },
     {
       id: 4,
       title: 'Mobile App Development',
       description: 'Cutting-edge apps with seamless UX and advanced functionality.',
       image: '/src/assets/images/service4.png',
-      gradient: 'from-red-400 to-pink-500'
     },
     {
       id: 5,
       title: 'UI/UX Design',
       description: 'Intuitive, visually striking designs for effortless digital interactions.',
       image: '/src/assets/images/service1.png',
-      gradient: 'from-purple-500 to-pink-500'
     },
     {
       id: 6,
       title: 'E-Commerce Platforms',
       description: 'Scalable solutions enhancing shopping experiences and driving growth.',
       image: '/src/assets/images/service2.png',
-      gradient: 'from-blue-400 to-blue-600'
     },
     {
       id: 7,
       title: 'Web Development',
       description: 'Tailored websites for performance, scalability, and a strong online presence.',
       image: '/src/assets/images/service3.png',
-      gradient: 'from-yellow-400 to-orange-500'
     },
     {
       id: 8,
       title: 'Mobile App Development',
       description: 'Cutting-edge apps with seamless UX and advanced functionality.',
       image: '/src/assets/images/service4.png',
-      gradient: 'from-red-400 to-pink-500'
     },
   ];
 
@@ -84,8 +76,8 @@ const ServicesSection = () => {
 
   const handlePrevious = () => {
     if (carouselRef.current && !isAtStart) {
-      const cardWidth = carouselRef.current.querySelector('.service-card').offsetWidth;
-      const gap = 30; // gap between cards
+      const cardWidth = 280;
+      const gap = 30;
       carouselRef.current.scrollBy({
         left: -(cardWidth + gap),
         behavior: 'smooth'
@@ -95,8 +87,8 @@ const ServicesSection = () => {
 
   const handleNext = () => {
     if (carouselRef.current && !isAtEnd) {
-      const cardWidth = carouselRef.current.querySelector('.service-card').offsetWidth;
-      const gap = 30; // gap between cards
+      const cardWidth = 280;
+      const gap = 30;
       carouselRef.current.scrollBy({
         left: cardWidth + gap,
         behavior: 'smooth'
@@ -105,26 +97,34 @@ const ServicesSection = () => {
   };
 
   return (
-    <div className="services-section">
-      <h2 className="services-title text-[48px]">Providing the best services for you</h2>
+    <section className="w-full py-20 bg-white">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-800 text-center mb-10 md:mb-15">
+        Providing the best services for you
+      </h2>
       
-      <div className="services-carousel-wrapper">
-        <div className="services-carousel" ref={carouselRef}>
+      <div className="max-w-[1400px] mx-auto mb-10 px-5 overflow-hidden">
+        <div 
+          ref={carouselRef}
+          className="flex gap-7 overflow-x-auto scroll-smooth hide-scrollbar pb-2"
+        >
           {services.map((service) => (
-            <div key={service.id} className="service-card cursor-pointer">
-              <div className="service-image">
-                <img src={service.image} alt={service.title} />
+            <div 
+              key={service.id} 
+              className="bg-white border border-gray-200 rounded-lg py-10 px-6 text-center flex flex-col items-center shrink-0 w-[280px] min-w-[250px] cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            >
+              <div className="w-[180px] h-[180px] mb-7 flex items-center justify-center">
+                <img src={service.image} alt={service.title} className="w-full h-full object-contain" />
               </div>
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="services-pagination">
+      <div className="flex justify-center gap-3">
         <button 
-          className={`pagination-arrow pagination-prev ${isAtStart ? 'disabled' : ''}`}
+          className={`w-10 h-10 border border-gray-300 rounded-md bg-white flex items-center justify-center cursor-pointer transition-all duration-200 text-gray-500 ${isAtStart ? 'opacity-30 cursor-not-allowed bg-gray-100' : 'hover:bg-gray-50 hover:border-gray-400 hover:text-gray-700 active:scale-95'}`}
           onClick={handlePrevious}
           disabled={isAtStart}
         >
@@ -133,7 +133,7 @@ const ServicesSection = () => {
           </svg>
         </button>
         <button 
-          className={`pagination-arrow pagination-next ${isAtEnd ? 'disabled' : ''}`}
+          className={`w-10 h-10 border border-gray-300 rounded-md bg-white flex items-center justify-center cursor-pointer transition-all duration-200 text-gray-500 ${isAtEnd ? 'opacity-30 cursor-not-allowed bg-gray-100' : 'hover:bg-gray-50 hover:border-gray-400 hover:text-gray-700 active:scale-95'}`}
           onClick={handleNext}
           disabled={isAtEnd}
         >
@@ -142,7 +142,7 @@ const ServicesSection = () => {
           </svg>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
