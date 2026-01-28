@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection"
 import ExpertsSection from "./components/ExpertsSection"
 import ClientsSection from "./components/ClientsSection"
 import ServicesSection from "./components/ServicesSection"
+import ClientStoriesSection from "./components/ClientStoriesSection"
 import ThodaAurSection from "./components/ThodaAurSection"
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
       <section>
         <ThodaAurSection />
       </section>
+
+      <section>
+        <ClientStoriesSection />
+      </section>
     </>
   )
-}export default App
+} export default App
