@@ -37,3 +37,65 @@
 .mySwiper .swiper-button-prev {
   color: #fff;
 }
+
+/* Clients Section Styles */
+.clients-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.clients-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clients-heading h2 {
+  color: #e5e7eb;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.clients-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.client-logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.client-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.5);
+  transition: filter 0.3s ease;
+}
+
+.client-logo:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

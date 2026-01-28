@@ -9,6 +9,10 @@
   background: linear-gradient(to top right, #ffffff 0%, #eaeaf9 100%);
 }
 
+body {
+  font-family: 'Google Sans', 'sans-serif';
+}
+
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-50px);

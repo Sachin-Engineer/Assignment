@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import HeroSection from "./components/HeroSection"
 import ExpertsSection from "./components/ExpertsSection"
+import ClientsSection from "./components/ClientsSection"
 
 function App() {
 
@@ -16,6 +17,10 @@ function App() {
 
       <section className="pl-5 pr-5 pt-3 pb-3">
         <ExpertsSection />
+      </section>
+
+      <section className="pl-5 pr-5 pt-3 pb-3">
+        <ClientsSection />
       </section>
     </>
   )
