@@ -25,7 +25,7 @@ const ClientStoriesSection = () => {
 
     return (
         <section 
-            className="w-full py-16 md:py-20 px-5"
+            className="max-w-7xl mx-auto w-full py-16 md:py-20 px-5"
             style={{ background: 'radial-gradient(circle at center, #0F3F6C, #001F3D, #021C34)' }}
         >
             <div className="max-w-7xl mx-auto">

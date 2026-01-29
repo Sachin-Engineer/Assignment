@@ -48,7 +48,7 @@ const ExpertsSection = () => {
   };
 
   return (
-    <div className="w-[95%] mx-auto bg-linear-to-br from-purple-50 to-blue-50 rounded-3xl p-4 md:p-8 lg:p-20 mt-20 mb-20">
+    <div className="max-w-7xl w-[95%] mx-auto bg-linear-to-br from-purple-50 to-blue-50 rounded-3xl p-4 md:p-8 lg:p-20 mt-20 mb-20">
       <div className="expert flex flex-col min-[820px]:flex-row justify-between gap-12 items-center">
         {/* Left Side - Counter Section */}
         <div className="flex flex-col w-fit items-center">

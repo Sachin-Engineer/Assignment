@@ -101,7 +101,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="w-full py-20 bg-white">
+    <section className="max-w-7xl mx-auto w-full py-20 bg-white">
       <h2 className="text-3xl md:text-4xl lg:text-5xl text-gray-800 text-center mb-10 md:mb-15">
         Providing the best services for you
       </h2>

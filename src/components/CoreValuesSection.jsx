@@ -40,8 +40,8 @@ const coreValues = [
 
 function CoreValuesSection() {
     return (
-        <section className="bg-[#E8EDF5] py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8 w-full">
-            <div className="max-w-7xl mx-auto">
+        <section className="bg-[#E8EDF5] max-w-7xl mx-auto py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8 w-full">
+            <div className="">
                 {/* Header */}
                 <div className="text-center mb-8 md:mb-10 lg:mb-12">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A2540] mb-3 md:mb-4 font-sans">

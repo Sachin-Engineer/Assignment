@@ -16,7 +16,7 @@ const ClientsSection = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden py-15 relative">
+    <div className="max-w-7xl mx-auto w-full overflow-hidden py-15 relative">
       <div className="flex justify-end mb-10">
         <h2 className='text-[100px] sm:text-[200px] font-bold leading-6 pt-5 text-gray-200'>
           <span className='capitalize'>C</span>l<span className='text-[#1946b6]'>i</span>ents

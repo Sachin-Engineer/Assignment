@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import MultipleIcons from '../assets/images/MultipleIcons.png'
 import FirstOne from '../assets/images/FirstOne.png'
+import OriginalAvatar from '../assets/Original-Avatar.mp4'
 
 const ThodaAurSection = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const videoRef = useRef(null);
+
+    // Auto-close when video ends
+    useEffect(() => {
+        const v = videoRef.current;
+        if (!v) return;
+        const handleEnded = () => setIsOpen(false);
+        v.addEventListener('ended', handleEnded);
+        return () => v.removeEventListener('ended', handleEnded);
+    }, [isOpen]);
+
+    // Prevent background scroll when modal open
+    useEffect(() => {
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isOpen]);
     return (
         <>
-            <div className="w-full bg-white px-6">
-                <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto w-full bg-white px-6">
+                <div className="">
                     {/* Large background text */}
                     <div className="thoda-container relative">
                         {/* THODA AUR text */}
@@ -33,11 +53,63 @@ const ThodaAurSection = () => {
                 </div>
             </div>
 
-            <div className='w-full overflow-x-hidden'>
-                <img src={MultipleIcons} className='w-full h-auto block' style={{ width: '100%', maxWidth: '100%' }} alt="" />
+            <div className='max-w-7xl w-full mx-auto overflow-x-hidden'>
+                <img
+                    src={MultipleIcons}
+                    className='w-full h-auto block cursor-pointer'
+                    style={{ width: '100%', maxWidth: '100%' }}
+                    alt="Open video"
+                    onClick={() => setIsOpen(true)}
+                />
             </div>
 
-            <div className='relative w-full overflow-x-hidden'>
+            {isOpen && (
+                <div
+                    className='fixed inset-0 z-50 flex items-center justify-center'
+                    aria-modal="true"
+                    role="dialog"
+                >
+                    {/* Backdrop with blur */}
+                    <div
+                        className='absolute inset-0 bg-black/50 backdrop-blur-sm'
+                        onClick={() => setIsOpen(false)}
+                    />
+                    {/* Modal content */}
+                    <div className='relative z-10 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl p-2'>
+                        {/* Close icon */}
+                        <button
+                            aria-label='Close video'
+                            className='absolute -top-6 -right-1 sm:-top-8 sm:-right-2 text-white hover:text-gray-200'
+                            onClick={() => setIsOpen(false)}
+                        >
+                            {/* X icon */}
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
+                                <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 9.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 11l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 12.06l-5.47 5.47a.75.75 0 1 1-1.06-1.06L10.94 11 5.47 5.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                            </svg>
+                        </button>
+
+                        {/* Video container - vertical format */}
+                        <div className='mx-auto rounded-lg overflow-hidden shadow-2xl border border-white/10 bg-black'>
+                            <video
+                                ref={videoRef}
+                                src={OriginalAvatar}
+                                controls
+                                autoPlay
+                                playsInline
+                                className='block mx-auto'
+                                style={{
+                                    width: '100%',
+                                    maxHeight: '80vh',
+                                    aspectRatio: '9 / 16', // vertical
+                                    objectFit: 'contain'
+                                }}
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            <div className='relative max-w-7xl mx-auto w-full overflow-x-hidden'>
                 <img src={FirstOne} style={{ width: '100%', maxWidth: '100%', display: 'block' }} alt="" />
 
                 <button className='absolute right-20 bottom-5 border-2 border-[#c74931] text-[#c74931] hover:border-white hover:text-white hover:bg-[#c74931] pt-2 pb-2 pl-5 pr-5 rounded-[10px] transition-all duration-300 cursor-pointer' >Let’s Connect & Create Together</button>

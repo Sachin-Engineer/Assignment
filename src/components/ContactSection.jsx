@@ -90,7 +90,7 @@ function ContactSection() {
     const errorClasses = "text-red-500 text-xs mt-1"
 
     return (
-        <section className="bg-gray-50 py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8 w-full">
+        <section className="bg-gray-50 py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto w-full">
             <div className="w-full sm:w-[90%] mx-auto">
                 {/* Header */}
                 <div className="text-center mb-8 md:mb-12 w-full">
