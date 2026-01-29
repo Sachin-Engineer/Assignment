@@ -7,7 +7,7 @@ function IDBsection() {
                 Why <span className="text-[#4169E1]">iDB</span>
             </h2>
 
-            <div className="mx-auto max-w-[95%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl leading-relaxed">
+            <div className="mx-auto max-w-[95%]  leading-relaxed">
                 <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-4 sm:mb-5">
                     we don't just build software/Application - we build confidence. With <span className="text-[#4169E1] font-semibold">15+</span> years of experience, we've helped businesses from fintech to e-commerce turn bold ideas into high-performing platforms. Our in-house frameworks accelerate development without compromising quality or ownership
                 </p>
