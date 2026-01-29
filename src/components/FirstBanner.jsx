@@ -10,7 +10,7 @@ function FirstBanner({ isActive = false }) {
   }, [isActive])
 
   return (
-    <div className='max-w-7xl mx-auto flex flex-col min-[1200px]:flex-row gap-2.5 pt-10 pb-10 px-4 min-[1200px]:px-0 relative'>
+    <div className='max-w-7xl mx-auto flex flex-col min-[1200px]:flex-row gap-2.5 pt-10 pb-10 min-[1200px]:px-0 relative'>
       <div className='max-w-full min-[1200px]:max-w-[520px] z-10 relative'>
         <p className='text-[28px] min-[500px]:text-[32px] min-[1200px]:text-[36px] font-googleSans pb-5'>
           <span className='text-[#1946b6]'>Chat</span>
