@@ -89,56 +89,6 @@ body {
   width: 100%;
 }
 
-.thodaaur-text {
-  padding-bottom: 250px;
-}
-
-@media (min-width: 361px) {
-  .thodaaur-text {
-    padding-bottom: 200px;
-  }
-}
-
-@media (min-width: 444px) {
-  .thodaaur-text {
-    padding-bottom: 200px;
-  }
-}
-
-@media (min-width: 600px) {
-  .thodaaur-text {
-    padding-bottom: 150px;
-  }
-}
-
-@media (min-width: 722px) {
-  .thodaaur-text {
-    padding-bottom: 100px;
-  }
-}
-
-@media (min-width: 822px) {
-  .thodaaur-text {
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 906px) {
-  .thoda-container {
-    height: 250px;
-  }
-}
-
-@media (min-width: 1068px) {
-  .thoda-container {
-    height: 350px;
-  }
-
-  .thoda-content {
-    top: 100px;
-  }
-}
-
 .expert {
   display: flex;
   flex-direction: column;

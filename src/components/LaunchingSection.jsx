@@ -19,7 +19,7 @@ const LaunchingSection = () => {
 
   return (
     <section>
-      <div style={{ maxWidth: 'min(1100px, 92vw)', margin: '0 auto' }}>
+      <div style={{ maxWidth: 'min(1100px, 92vw)', margin: '50px auto' }}>
         <div style={{
           borderRadius: 16,
           overflow: 'hidden',

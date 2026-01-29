@@ -5,17 +5,17 @@ import FirstOne from '../assets/images/FirstOne.png'
 const ThodaAurSection = () => {
     return (
         <>
-            <div className="w-full bg-white pt-16 px-6">
+            <div className="w-full bg-white px-6">
                 <div className="max-w-7xl mx-auto">
                     {/* Large background text */}
-                    <div className="thoda-container relative h-[200px]">
+                    <div className="thoda-container relative">
                         {/* THODA AUR text */}
                         <h1 className="thodaaur-text text-center text-[40px] sm:text-[80px] md:text-[100px] lg:text-[160px] font-bold text-[#f2f2f2] leading-none tracking-tight uppercase">
                             THODA AUR
                         </h1>
 
-                        {/* Content overlay */}
-                        <div className="thoda-content absolute top-7 sm:top-14 w-full bg-white flex items-center pt-5 pb-5">
+                        {/* Content block - relative overlap ~50% of heading */}
+                        <div className="relative w-full bg-white flex items-center pt-4 pb-4 -mt-3 sm:-mt-7 md:-mt-10 lg:-mt-16">
                             <div className="max-w-[95%] mx-auto">
                                 <p className="text-gray-700 leading-6">
                                     <span className="text-blue-600 font-semibold">

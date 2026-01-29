@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo.svg'
 import phone from '../assets/images/phone.svg'
@@ -6,6 +6,32 @@ import mail from '../assets/images/mail.svg'
 
 function Header() {
     const [mobileOpen, setMobileOpen] = useState(false)
+    const toggleRef = useRef(null)
+    const menuRef = useRef(null)
+
+    useEffect(() => {
+        const handleOutside = (e) => {
+            if (!mobileOpen) return
+
+            const toggleEl = toggleRef.current
+            const menuEl = menuRef.current
+
+            // If click is inside the menu or on the toggle button, ignore
+            if ((menuEl && menuEl.contains(e.target)) || (toggleEl && toggleEl.contains(e.target))) {
+                return
+            }
+
+            setMobileOpen(false)
+        }
+
+        document.addEventListener('mousedown', handleOutside)
+        document.addEventListener('touchstart', handleOutside)
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutside)
+            document.removeEventListener('touchstart', handleOutside)
+        }
+    }, [mobileOpen])
     return (
         <>
             <div className='header max-w-7xl flex flex-row justify-between items-center mx-auto'>
@@ -60,7 +86,8 @@ function Header() {
                         className='md:hidden inline-flex items-center justify-center rounded-md p-2 text-[#1946b6] ring-1 ring-[#1946b6]/20'
                         aria-label='Toggle menu'
                         aria-expanded={mobileOpen}
-                        onClick={() => setMobileOpen((v) => !v)}
+            onClick={() => setMobileOpen((v) => !v)}
+            ref={toggleRef}
                     >
                         {mobileOpen ? (
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +102,7 @@ function Header() {
                 </div>
             </div>
             {mobileOpen && (
-                <div className='md:hidden max-w-7xl mx-auto px-4 pt-3'>
+        <div className='md:hidden max-w-7xl mx-auto px-4 pt-3' ref={menuRef}>
                     <div className='flex flex-col gap-3 border-t border-[#e5e7eb] pt-3'>
                         <a className="nav__item flex items-center justify-between" href='#' onClick={() => setMobileOpen(false)}>
                             <span>

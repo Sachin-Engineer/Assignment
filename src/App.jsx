@@ -8,22 +8,16 @@ function App() {
 
   return (
     <>
-      <header
-        className="pl-5 pr-5 pt-3 pb-3"
-        style={{
-          position: 'sticky',
-          top: 0,
-          zIndex: 50,
-          background: '#fff',
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)'
-        }}
-      >
+      <header className="fixed top-0 left-0 w-full z-50 pl-5 pr-5 pt-3 pb-3 bg-white" style={{boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)'}}>
         <Header />
       </header>
 
+      {/* Spacer to offset fixed header height */}
+      <div style={{ height: 64 }} />
+
       <Outlet />
 
-      <footer className="mt-8 w-full">
+      <footer className="w-full">
         <div className="footer-wrapper w-full" style={{
           background: '#f6f7f9',
           borderTop: '1px solid #e5e7eb',
