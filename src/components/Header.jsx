@@ -34,7 +34,7 @@ function Header() {
     }, [mobileOpen])
     return (
         <>
-            <div className='header max-w-7xl flex flex-row justify-between items-center mx-auto'>
+            <div className='header max-w-[1440px] flex flex-row justify-between items-center mx-auto'>
                 <div>
                     <Link to="/">
                         <img src={logo} alt="" />

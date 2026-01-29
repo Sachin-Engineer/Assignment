@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 pl-5 pr-5 pt-3 pb-3 bg-white" style={{boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)'}}>
+      <header className="fixed top-0 left-0 w-full mx-auto z-50 pl-5 pr-5 pt-3 pb-3 bg-white" style={{boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)'}}>
         <Header />
       </header>
 
@@ -17,7 +17,7 @@ function App() {
 
       <Outlet />
 
-      <footer className="w-full">
+      <footer className="max-w-[1440px] w-full mx-auto">
         <div className="footer-wrapper w-full" style={{
           background: '#f6f7f9',
           borderTop: '1px solid #e5e7eb',

@@ -30,7 +30,7 @@ const BlogsSection = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 max-w-7xl mx-auto">
+    <section className="py-12 sm:py-16 md:py-20 max-w-[1440px] mx-auto">
       <div className="text-center mb-12 md:mb-15">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">Blogs</h2>
         <p className="text-justify text-sm md:text-base text-gray-500 leading-relaxed max-w-3xl mx-auto">

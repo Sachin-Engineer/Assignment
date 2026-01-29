@@ -23,7 +23,7 @@ function Revolution() {
   ]
 
   return (
-    <section className="max-w-7xl mx-auto py-20 bg-white overflow-hidden">
+    <section className="max-w-[1440px] mx-auto py-20 bg-white overflow-hidden">
       <div className="w-[95%] mx-auto px-5 relative">
         {/* Background Text */}
         <div 

@@ -25,10 +25,10 @@ const ClientStoriesSection = () => {
 
     return (
         <section 
-            className="max-w-7xl mx-auto w-full py-16 md:py-20 px-5"
+            className="max-w-[1440px]  mx-auto w-full py-16 md:py-20 px-5"
             style={{ background: 'radial-gradient(circle at center, #0F3F6C, #001F3D, #021C34)' }}
         >
-            <div className="max-w-7xl mx-auto">
+            <div className="">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-5 mb-12 md:mb-15">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-white text-center">
                         Client Stories

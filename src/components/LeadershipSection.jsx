@@ -13,7 +13,7 @@ function LeadershipSection() {
     ]
 
     return (
-        <section className="bg-transparent max-w-7xl mx-auto text-center px-5 py-12 sm:py-16 md:py-20">
+        <section className="bg-transparent max-w-[1440px] mx-auto text-center px-5 py-12 sm:py-16 md:py-20">
             {/* Heading with styled "i" */}
             <div className="mb-8 sm:mb-10">
                 <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-[120px] font-light text-gray-100 lowercase tracking-tight leading-none">

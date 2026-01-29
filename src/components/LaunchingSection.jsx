@@ -19,7 +19,7 @@ const LaunchingSection = () => {
 
   return (
     <section>
-      <div style={{ margin: '50px auto' }} className='max-w-6xl'>
+      <div style={{ margin: '50px auto' }} className='max-w-[1300px]'>
         <div style={{
           borderRadius: 16,
           overflow: 'hidden',

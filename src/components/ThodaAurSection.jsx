@@ -25,7 +25,7 @@ const ThodaAurSection = () => {
     }, [isOpen]);
     return (
         <>
-            <div className="max-w-7xl mx-auto w-full bg-white px-6">
+            <div className="max-w-[1440px] mx-auto w-full bg-white px-6">
                 <div className="">
                     {/* Large background text */}
                     <div className="thoda-container relative">
@@ -53,7 +53,7 @@ const ThodaAurSection = () => {
                 </div>
             </div>
 
-            <div className='max-w-7xl w-full mx-auto overflow-x-hidden'>
+            <div className='max-w-[1440px] w-full mx-auto overflow-x-hidden'>
                 <img
                     src={MultipleIcons}
                     className='w-full h-auto block cursor-pointer'
@@ -109,7 +109,7 @@ const ThodaAurSection = () => {
                 </div>
             )}
 
-            <div className='relative max-w-7xl mx-auto w-full overflow-x-hidden'>
+            <div className='relative max-w-[1440px] mx-auto w-full overflow-x-hidden'>
                 <img src={FirstOne} style={{ width: '100%', maxWidth: '100%', display: 'block' }} alt="" />
 
                 <button className='absolute right-20 bottom-5 border-2 border-[#c74931] text-[#c74931] hover:border-white hover:text-white hover:bg-[#c74931] pt-2 pb-2 pl-5 pr-5 rounded-[10px] transition-all duration-300 cursor-pointer' >Let’s Connect & Create Together</button>
