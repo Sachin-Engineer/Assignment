@@ -59,6 +59,15 @@
   display: none;
 }
 
+html, body {
+  overflow-y: scroll; /* ensures layout doesn't shift */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  width: 0px; /* Chrome/Safari */
+  height: 0px;
+}
+
 /* Client logo hover effect */
 .client-logo img {
   filter: grayscale(100%) opacity(0.5);

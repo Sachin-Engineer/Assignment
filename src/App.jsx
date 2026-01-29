@@ -1,13 +1,23 @@
 import Header from "./components/Header"
 const CURRENT_YEAR = new Date(Date.now()).getFullYear()
 import footerBg from "./assets/images/Footer.png"
+import vectorLogo from "./assets/images/Vector.png"
 import { Outlet } from "react-router-dom"
 
 function App() {
 
   return (
     <>
-      <header className="pl-5 pr-5 pt-3 pb-3">
+      <header
+        className="pl-5 pr-5 pt-3 pb-3"
+        style={{
+          position: 'sticky',
+          top: 0,
+          zIndex: 50,
+          background: '#fff',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)'
+        }}
+      >
         <Header />
       </header>
 
@@ -15,18 +25,18 @@ function App() {
 
       <footer className="mt-8 w-full">
         <div className="footer-wrapper w-full" style={{
-            background: '#f6f7f9',
-            borderTop: '1px solid #e5e7eb',
-            backgroundImage: `url(${footerBg})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
+          background: '#f6f7f9',
+          borderTop: '1px solid #e5e7eb',
+          backgroundImage: `url(${footerBg})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
         >
           <div className="pl-5 pr-5 pt-8 pb-8" style={{ maxWidth: 1200, margin: '0 auto', textAlign: 'center' }}>
             {/* Logo + Tagline */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
-              <img src="/src/assets/images/vector.png" alt="iDreamBiz" />
+              <img src={vectorLogo} alt="iDreamBiz" />
             </div>
 
             {/* Social icons */}

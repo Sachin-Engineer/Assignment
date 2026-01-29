@@ -51,12 +51,12 @@ const ExpertsSection = () => {
     <div className="w-[95%] mx-auto bg-linear-to-br from-purple-50 to-blue-50 rounded-3xl p-4 md:p-8 lg:p-20 mt-20 mb-20">
       <div className="expert flex flex-col min-[820px]:flex-row justify-between gap-12 items-center">
         {/* Left Side - Counter Section */}
-        <div className="flex flex-col items-start w-fit">
+        <div className="flex flex-col w-fit items-center">
           <div className="mb-8 transition-all duration-500 ease-in-out">
             <h2 className="text-8xl md:text-[120px] font-bold text-orange-500 leading-none mb-4">
               {experts[currentIndex].count}
             </h2>
-            <p className="text-[20px] font-semibold text-gray-800">
+            <p className="text-[20px] text-center font-semibold text-gray-800">
               {experts[currentIndex].title}
             </p>
           </div>

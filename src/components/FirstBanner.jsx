@@ -29,7 +29,7 @@ function FirstBanner({ isActive = false }) {
         </button>
       </div>
 
-      <div className='absolute min-[1200px]:relative inset-0 min-[1200px]:inset-auto w-full h-full min-[1200px]:h-[460px] overflow-hidden opacity-20 min-[1200px]:opacity-100 z-0'>
+      <div className='absolute min-[1200px]:relative inset-0 min-[1200px]:inset-auto w-full h-full min-[1200px]:h-[460px] overflow-hidden opacity-20 min-[1200px]:opacity-100 z-0 hidden min-[400px]:flex'>
         {/* AI Powered Chatbots card */}
         <div className='absolute top-[8%] left-[25%] -translate-x-1/2 w-[50%] min-[1200px]:w-[300px] max-w-[300px]'>
           <div key={`firstBanner-left-${animKey}`} className='animate-[slideInFromLeftOutside_800ms_ease-out_both] motion-reduce:animate-none'>

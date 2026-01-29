@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import HeroOne from "../assets/images/hero-2.1.svg";
+import HeroOne from "../assets/images/hero-2.1.jpg";
 
 function SecondBanner({ isActive = false }) {
     const [animKey, setAnimKey] = useState(0);
