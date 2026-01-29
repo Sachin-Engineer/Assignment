@@ -44,7 +44,7 @@ function CoreValuesSection() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-8 md:mb-10 lg:mb-12">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-[#0A2540] mb-3 md:mb-4 font-serif">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A2540] mb-3 md:mb-4 font-sans">
                         Our Core <span className='text-[#074784]'>Values</span>
                     </h2>
                     <p className="text-sm md:text-base text-gray-500">

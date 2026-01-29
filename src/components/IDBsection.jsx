@@ -2,7 +2,7 @@ import React from 'react'
 
 function IDBsection() {
     return (
-        <div className="bg-[#E8ECF4] text-center py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8">
+        <div className="bg-[#E8ECF4] text-center py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 mt-12 sm:mt-16 md:mt-20">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-8 text-gray-900 tracking-tight">
                 Why <span className="text-[#4169E1]">iDB</span>
             </h2>

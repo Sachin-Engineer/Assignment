@@ -65,7 +65,7 @@ const ExpertsSection = () => {
           <div className="flex gap-3">
             <button
               onClick={handlePrev}
-              className="w-12 h-12 border-2 border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
+              className="w-10 h-10 border border-gray-400 rounded-md bg-transparent flex items-center justify-center cursor-pointer transition-all duration-200 text-gray-500 hover:bg-gray-50 hover:border-gray-900 hover:text-gray-700 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-label="Previous"
             >
               <svg
@@ -81,7 +81,7 @@ const ExpertsSection = () => {
             </button>
             <button
               onClick={handleNext}
-              className="w-12 h-12 border-2 border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
+              className="w-10 h-10 border border-gray-400 rounded-md bg-transparent flex items-center justify-center cursor-pointer transition-all duration-200 text-gray-500 hover:bg-gray-50 hover:border-gray-900 hover:text-gray-700 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
               aria-label="Next"
             >
               <svg
@@ -112,7 +112,7 @@ const ExpertsSection = () => {
             {experts[currentIndex].description}
           </p>
 
-          <button className="pt-2 pb-2 pl-5 pr-5 bg-[#1946b6] text-white rounded-md cursor-pointer hover:bg-blue-700 transition-colors">
+          <button className='pt-2 pb-2 pl-5 pr-5 bg-[#1946b6] text-white rounded-md cursor-pointer transition duration-200 ease-out hover:bg-blue-700 hover:shadow-md hover:-translate-y-px active:scale-95 active:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white'>
             Know More
           </button>
         </div>

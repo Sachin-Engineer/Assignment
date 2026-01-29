@@ -24,7 +24,9 @@ function FirstBanner({ isActive = false }) {
 
         <p className='text-[#767676] text-[14px] min-[500px]:text-[16px] pt-5 pb-5'>An all-in-one platform for limitless business communication, seamless meetings, dual-screen sharing, media exchange, and in-house bots, boosting productivity and collaboration</p>
 
-        <button className='pt-2 pb-2 pl-5 pr-5 bg-[#1946b6] text-white rounded-md cursor-pointer'>Explore</button>
+        <button className='pt-2 pb-2 pl-5 pr-5 bg-[#1946b6] text-white rounded-md cursor-pointer transition duration-200 ease-out hover:bg-blue-700 hover:shadow-md hover:-translate-y-px active:scale-95 active:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white'>
+          Explore
+        </button>
       </div>
 
       <div className='absolute min-[1200px]:relative inset-0 min-[1200px]:inset-auto w-full h-full min-[1200px]:h-[460px] overflow-hidden opacity-20 min-[1200px]:opacity-100 z-0'>
@@ -112,7 +114,7 @@ function FirstBanner({ isActive = false }) {
           <img src={HeroOne} alt="" className='w-full h-auto' />
         </div>
 
-  <div className='absolute top-0 right-0 w-[45%] hidden min-[400px]:block'>
+        <div className='absolute top-0 right-0 w-[45%] hidden min-[400px]:block'>
           <img src={HeroTwo} alt="" className='w-full h-auto' />
         </div>
       </div>

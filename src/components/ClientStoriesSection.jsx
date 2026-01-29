@@ -51,8 +51,8 @@ const ClientStoriesSection = () => {
                                 {testimonial.text}
                             </p>
                             {testimonial.image && (
-                                <div className="absolute right-14 bottom-4 md:bottom-15">
-                                    <img src={testimonial.image} className='h-10' alt="" />
+                                <div className="mt-4 flex justify-end">
+                                    <img src={testimonial.image} className='h-10 md:h-12' alt="" />
                                 </div>
                             )}
                         </div>

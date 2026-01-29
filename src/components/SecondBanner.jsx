@@ -9,7 +9,7 @@ function SecondBanner({ isActive = false }) {
     }, [isActive]);
 
     return (
-    <div className="max-w-7xl mx-auto flex flex-col min-[1200px]:flex-row gap-2.5 pt-10 pb-10 relative overflow-x-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col min-[1200px]:flex-row gap-2.5 pt-10 pb-10 relative overflow-x-hidden">
             <div className="max-w-full min-[1200px]:w-1/2 min-[1200px]:min-w-0 z-10 relative">
                 <p className="text-[28px] min-[500px]:text-[32px] min-[1200px]:text-[36px] font-googleSans pb-5">
                     <span className="text-[#1946b6]">FinTech</span>
@@ -29,7 +29,7 @@ function SecondBanner({ isActive = false }) {
                     solutions, user experience, and compliance
                 </p>
 
-                <button className="pt-2 pb-2 pl-5 pr-5 bg-[#1946b6] text-white rounded-md cursor-pointer">
+                <button className='pt-2 pb-2 pl-5 pr-5 bg-[#1946b6] text-white rounded-md cursor-pointer transition duration-200 ease-out hover:bg-blue-700 hover:shadow-md hover:-translate-y-px active:scale-95 active:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white'>
                     Explore
                 </button>
             </div>

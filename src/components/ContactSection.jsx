@@ -91,10 +91,10 @@ function ContactSection() {
 
     return (
         <section className="bg-gray-50 py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8 w-full">
-            <div className="max-w-6xl mx-auto">
+            <div className="w-full sm:w-[90%] mx-auto">
                 {/* Header */}
                 <div className="text-center mb-8 md:mb-12 w-full">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-[#0A2540] mb-3 md:mb-4 font-serif">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold text-[#0A2540] mb-3 md:mb-4 font-sans">
                         Contact Us
                     </h2>
                     <p className="text-sm md:text-base text-gray-500">
