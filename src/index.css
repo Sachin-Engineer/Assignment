@@ -99,3 +99,8 @@ body {
     flex-direction: row;
   }
 }
+
+/* Hero section swiper pagination position tweak */
+.Hero-Section .swiper-pagination {
+  bottom: 55px !important; /* move bar slightly above the bottom */
+}
